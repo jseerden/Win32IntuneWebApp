@@ -4,7 +4,7 @@ Packaged to IntuneWin with the Microsoft Win32 Content Prep Tool: https://github
 Package command used: IntuneWinAppUtil.exe -c '.\Source' -s '.\Source\Add-WebApp.ps1' -o '.\Package'
 
 ## Example Win32 App Configuration
-Install command: `PowerShell.exe -ExecutionPolicy Bypass -WindowStyle Hidden -File "Add-WebApp.ps1" -ShortcutName "MyApps" -ShortcutUrl "https://myapps.microsoft.com" -ShortcutIconUrl "https://myintuneiconstorage.blob.core.windows.net/icons/microsoft-myapps.ico" -ShortcutInStartMenu $true -ShortcutOnDesktop $true -ShortcutInStartup $false`
+Install command: `PowerShell.exe -ExecutionPolicy Bypass -WindowStyle Hidden -File "Add-WebApp.ps1" -ShortcutName "MyApps" -ShortcutUrl "https://myapps.microsoft.com" -ShortcutIconUrl "https://myintuneiconstorage.blob.core.windows.net/icons/microsoft-myapps.ico" -ShortcutInStartMenu "true" -ShortcutOnDesktop "true" -ShortcutInStartup "false"`
 
 Uninstall command: `PowerShell.exe -ExecutionPolicy Bypass -WindowStyle Hidden -File "Remove-WebApp.ps1" -ShortcutName "MyApps"`
 
